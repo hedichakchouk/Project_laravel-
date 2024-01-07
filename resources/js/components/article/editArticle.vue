@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
 
-        13
+
         <h4 align="center">Modifier Article</h4>
         <form @submit.prevent="modifierproduit">
             <div class="row">
@@ -64,10 +64,12 @@
                 />
             </div>
             <br/>
-            <button type="submit" className="btn btn-outline-primary">
+            <router-link to="/listArticles" class="btn btn-outline-danger mx-2">
+            <button type="submit" class Name="btn btn-outline-primary">
                 <i class="fa-solid fa-floppy-disk"></i>Enregister
             </button>
-            <router-link to="/listart" class="btn btn-outline-danger mx-2">
+            </router-link>
+            <router-link to="/listArticles" class="btn btn-outline-danger mx-2">
                 <i class="fa-solid fa-xmark"></i>Cancel
             </router-link>
 

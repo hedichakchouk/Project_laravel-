@@ -35,11 +35,10 @@ outline-light">
                 <td> {{ art.prix}}</td>
 
                 <td><button class="btn btn-outline-primary mx-2">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    Edit</button></td>
-                <td><button class="btn btn-outline-danger mx-2"
-                            @click="deleteArticle(art.id)">
-
+                    <router-link :to="{name: 'editarticle', params: { id: art.id }}">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    Edit </router-link> </button></td>
+                <td><button class="btn btn-outline-danger mx-2" @click="deleteArticle(art.id)">
                     <i class="fa-solid fa-trash-can"></i>
                     Delete
                 </button></td>
@@ -67,7 +66,8 @@ const getArticles = async ()  =>{ await axios.get("http://localhost:8000/api/art
 onMounted(()=> {  getArticles() ;
 })
 
-const deleteArticle = id => async (id)=> {
+const deleteArticle = async (id)=> {
+
         if(window.confirm("vouley vous supprimer  larticle ")) {
             await axios.delete(`http://localhost:8000/api/articles/${id}`).then(res=>{
                 getArticles();
