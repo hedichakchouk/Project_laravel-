@@ -158,15 +158,13 @@ const serverOptions = () => { console.log('server pond');
         process: (fieldName, file, metadata, load, error, progress, abort) => {
             const data = new FormData();
             data.append('file', file);
-            data.append('upload_preset', 'GLID5IIT');
-            data.append('cloud_name', 'esps');
+            data.append('upload_preset', 'HAcheeaaa');
+            data.append('cloud_name', 'dkqemdpac');
             data.append('public_id', file.name);
-            axios.post('https://api.cloudinary.com/v1_1/esps/upload',data)
-
+            axios.post('https://api.cloudinary.com/v1_1/dkqemdpac/upload',data)
                 .then((response) => response.data)
                 .then((data) => {
                     console.log(data);
-
                     article.value.imageart = data.url;
                     load(data);
                 })
