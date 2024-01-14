@@ -23,7 +23,7 @@ outline-light">
             <th> designation </th>
             <th> price </th>
             <th> quantile </th>
-            <th> Marque  </th>isan
+            <th> Marque  </th>
             <th> Delete </th>
             </tr></thead>
             <tbody>
