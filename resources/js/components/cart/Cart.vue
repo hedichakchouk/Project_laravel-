@@ -29,7 +29,7 @@
                                 <div>
                                     <h3>{{ c.product.designation }}</h3>
                                     <p>{{ c.product.reference }}</p>
-                                    <button @click="removeFromCart(c)">
+                                    <button @click="removeFromCart(c)" style="background-color: red; color: white;" >
                                         Remove
                                     </button>
                                 </div>
@@ -47,7 +47,6 @@
                             </div>
                         </div>
 
-                        10
 
                     </div>
                 </div>
@@ -59,9 +58,7 @@
                         <div class="subtotal">
                             <span>Subtotal</span>
                             <span class="amount">{{$store.state.Articlestore.cartTotal}}
-
 TND</span>
-
                         </div>
                         <p>Taxes and shipping calculated at checkout</p>
                         <button>Check out</button>
@@ -70,8 +67,11 @@ TND</span>
                                 <button class="btn btn-success">
                                     <span>Continue Shopping</span></button>
                             </router-link>
-
                         </div>
+                        <p> </p>
+
+                        <router-link :to="{name: 'Payment'}" > <button class="btn btn-dark"> Payment
+                        </button> </router-link>
                     </div>
                 </div>
             </div>

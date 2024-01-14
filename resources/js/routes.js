@@ -4,6 +4,7 @@ import AddArticle from "./components/article/addArticle.vue";
 import editArticle from "./components/article/editArticle.vue";
 import HomeCart from './components/cart/HomeCart.vue';
 import Cart from "@/components/cart/Cart.vue";
+import Payment from "@/components/cart/Payment.vue";
 export const routes = [
     {
         name: 'accueil',
@@ -31,5 +32,10 @@ export const routes = [
         path:'/cart',
         name:'Cart',
         component:Cart
+    },
+    {
+        path:'/payment',
+        name:'Payment',
+        component:Payment
     },
 ];
