@@ -2,7 +2,8 @@ import Accueil from "./components/accueil.vue";
 import viewArticle from "./components/article/viewArticle.vue";
 import AddArticle from "./components/article/addArticle.vue";
 import editArticle from "./components/article/editArticle.vue";
-
+import HomeCart from './components/cart/HomeCart.vue';
+import Cart from "@/components/cart/Cart.vue";
 export const routes = [
     {
         name: 'accueil',
@@ -20,5 +21,15 @@ export const routes = [
         name:"editarticle",
         path:"/editarticle/:id",
         component:editArticle
+    },
+    {
+        path:'/shopping',
+        name:'HomeCart',
+        component:HomeCart
+    },
+    {
+        path:'/cart',
+        name:'Cart',
+        component:Cart
     },
 ];
