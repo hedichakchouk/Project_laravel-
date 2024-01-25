@@ -90,7 +90,7 @@ onMounted(() => {
 
 );
 
-11
+
 
 const clearCart=()=> {
     store.commit("Articlestore/clearCart");

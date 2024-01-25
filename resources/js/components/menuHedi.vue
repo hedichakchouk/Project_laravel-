@@ -17,7 +17,8 @@
  <router-link to="/listArticles" class ="nav-link" > Articles </router-link>
                      </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Matekhdmch
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
